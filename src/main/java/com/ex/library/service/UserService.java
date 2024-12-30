@@ -2,9 +2,9 @@ package com.ex.library.service;
 
 import com.ex.library.model.User;
 import com.ex.library.repository.UserRepository;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,6 +17,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
+    @Transactional
     public User createUser(User user) {
         return userRepository.save(user);
     }

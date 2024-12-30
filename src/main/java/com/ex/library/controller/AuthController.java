@@ -4,18 +4,12 @@ import com.ex.library.dto.AuthenticationRequest;
 import com.ex.library.dto.AuthenticationResponse;
 import com.ex.library.dto.RegisterRequest;
 import com.ex.library.service.AuthenticationService;
-import com.ex.library.util.JwtUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
