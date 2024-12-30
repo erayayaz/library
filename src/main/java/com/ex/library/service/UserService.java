@@ -4,7 +4,7 @@ import com.ex.library.model.User;
 import com.ex.library.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 

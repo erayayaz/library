@@ -3,7 +3,7 @@ package com.ex.library.model;
 import com.ex.library.enums.Role;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Getter
